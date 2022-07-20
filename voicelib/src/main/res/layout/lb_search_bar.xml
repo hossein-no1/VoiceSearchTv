@@ -20,8 +20,8 @@
         android:layout_marginStart="@dimen/lb_search_bar_speech_orb_margin_start"
         android:layout_marginTop="27dp"
         android:focusable="true"
-        android:layoutDirection="ltr"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:layoutDirection="ltr">
 
         <requestFocus />
     </ir.hamedgramzi.voicelib.SpeechOrbView>
@@ -32,11 +32,11 @@
         android:layout_height="@dimen/lb_search_bar_items_height"
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/lb_search_bar_items_margin_start"
-        android:layoutDirection="ltr"
         android:layout_marginTop="29dp"
         android:layout_marginBottom="@dimen/lb_search_bar_inner_margin_bottom"
         android:layout_toEndOf="@+id/lb_search_bar_speech_orb"
-        android:background="#B0B5B8">
+        android:background="#B0B5B8"
+        android:layoutDirection="ltr">
 
         <ImageView
             android:id="@+id/lb_search_bar_badge"
@@ -60,15 +60,18 @@
             android:cursorVisible="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:hint="@string/lb_search_bar_hint"
             android:gravity="start"
+            android:hint="@string/lb_search_bar_hint"
             android:imeOptions="normal|flagNoExtractUi|actionSearch"
             android:inputType="text|textAutoComplete"
+            android:layoutDirection="rtl"
+            android:paddingRight="24dp"
             android:singleLine="true"
             android:textAlignment="viewStart"
             android:textColor="@color/lb_search_bar_text"
             android:textColorHint="@color/lb_search_bar_hint"
             android:textCursorDrawable="@null"
+            android:textDirection="rtl"
             android:textSize="@dimen/lb_search_bar_text_size" />
     </RelativeLayout>
 </merge>
