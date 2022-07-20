@@ -61,6 +61,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:hint="@string/lb_search_bar_hint"
+            android:gravity="start"
             android:imeOptions="normal|flagNoExtractUi|actionSearch"
             android:inputType="text|textAutoComplete"
             android:singleLine="true"
