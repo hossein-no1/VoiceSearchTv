@@ -26,6 +26,7 @@
         <requestFocus />
     </ir.hamedgramzi.voicelib.SpeechOrbView>
 
+
     <RelativeLayout
         android:id="@+id/lb_search_bar_items"
         android:layout_width="@dimen/lb_search_bar_items_width"

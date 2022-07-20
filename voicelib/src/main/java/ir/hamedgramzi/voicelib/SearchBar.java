@@ -197,6 +197,15 @@ public class SearchBar extends RelativeLayout {
             public void onFocusChange(View view, boolean hasFocus) {
                 if (DEBUG) Log.v(TAG, "EditText.onFocusChange " + hasFocus);
                 if (hasFocus) {
+                    if (mSearchTextEditor.getText() != null) {
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                Integer textLength = mSearchTextEditor.getText().toString().length();
+                                mSearchTextEditor.setSelection(textLength);
+                            }
+                        }, 100);
+                    }
                     showNativeKeyboard();
                 } else {
                     hideNativeKeyboard();
